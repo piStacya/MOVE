@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leia trenn – MOVE</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page page--search">
+  <header class="header">
+    <a class="header__back" href="avaleht.html"><span aria-hidden="true">←</span>Avalehele</a>
+    <button class="header__menu" type="button" aria-label="Ava menüü" popovertarget="menu">
+      <svg class="icon icon--menu" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <rect x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M7 8h10M7 12h10M7 16h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </header>
+
+  <nav class="menu" id="menu" popover aria-label="Peamenüü">
+    <div class="menu__header">
+      <a class="menu__logo" href="avaleht.html">MOVE</a>
+      <button class="menu__close" type="button" popovertarget="menu" popovertargetaction="hide" aria-label="Sulge menüü">
+        <svg class="icon icon--close" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M8 8l8 8M16 8l-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+    <ul class="menu__list">
+      <li class="menu__item"><a class="menu__link" href="avaleht.html">Avaleht<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="leia_trenn.html" aria-current="page">Leia trenn<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="hiit.html">HIIT treening<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="broneeri_koht.html">Broneeri koht<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Hinnakiri<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="#">KKK<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+    </ul>
+  </nav>
+
+  <main class="main">
+    <div class="page-intro">
+      <h1 class="page-intro__title">Leia trenn</h1>
+      <p class="page-intro__text">Vali oma eelistused ja leia sobivad trennid.</p>
+    </div>
+
+    <form class="filter" action="leia_trenn.html#tulemused" method="get">
+      <div class="filter__fields">
+        <div class="filter__field">
+          <label class="filter__label" for="eesmark">Eesmärk</label>
+          <select class="filter__select" id="eesmark" name="eesmark">
+            <option value="vormis" selected>Vormis püsimine</option>
+            <option value="joud">Jõu kasvatamine</option>
+            <option value="stress">Stressist vabanemine</option>
+          </select>
+        </div>
+        <div class="filter__field">
+          <label class="filter__label" for="aeg">Aeg</label>
+          <select class="filter__select" id="aeg" name="aeg">
+            <option value="30">Kuni 30 min</option>
+            <option value="60" selected>Kuni 1 h</option>
+            <option value="90">Kuni 1,5 h</option>
+          </select>
+        </div>
+        <div class="filter__field">
+          <label class="filter__label" for="raskus">Raskusaste</label>
+          <select class="filter__select" id="raskus" name="raskus">
+            <option value="algaja">Algaja</option>
+            <option value="keskmine" selected>Keskmine</option>
+            <option value="edasijoudnud">Edasijõudnud</option>
+          </select>
+        </div>
+      </div>
+      <button class="button button--primary filter__submit" type="submit">Näita trenne</button>
+    </form>
+
+    <section class="results" id="tulemused" aria-labelledby="results-title">
+      <h2 class="results__title" id="results-title">Sulle sobivad trennid</h2>
+      <ul class="results__list">
+        <li class="results__item">
+          <article class="workout-card">
+            <img class="workout-card__image" src="img/hiit.jpg" alt="Mees" width="128" height="108">
+            <div class="workout-card__body">
+              <h3 class="workout-card__title">HIIT</h3>
+              <p class="workout-card__time"><time datetime="13:00">13.00</time></p>
+              <a class="button button--primary workout-card__link" href="hiit.html">Vaata infot</a>
+            </div>
+          </article>
+        </li>
+        <li class="results__item">
+          <article class="workout-card">
+            <img class="workout-card__image" src="img/jooga.jpg" alt="Naine" width="128" height="108">
+            <div class="workout-card__body">
+              <h3 class="workout-card__title">Jooga</h3>
+              <p class="workout-card__time"><time datetime="17:00">17.00</time></p>
+              <a class="button button--primary workout-card__link" href="#">Vaata infot</a>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <div class="results__end">
+        <p class="results__end-title">Rohkem tulemusi pole.</p>
+        <p class="results__end-text">Oled jõudnud nimekirja lõppu.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

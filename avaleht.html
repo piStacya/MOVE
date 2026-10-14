@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MOVE treeningstuudio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page page--home">
+  <header class="header">
+    <a class="header__logo" href="avaleht.html">MOVE</a>
+    <button class="header__menu" type="button" aria-label="Ava menüü" popovertarget="menu">
+      <svg class="icon icon--menu" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <rect x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M7 8h10M7 12h10M7 16h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </header>
+
+  <nav class="menu" id="menu" popover aria-label="Peamenüü">
+    <div class="menu__header">
+      <a class="menu__logo" href="avaleht.html">MOVE</a>
+      <button class="menu__close" type="button" popovertarget="menu" popovertargetaction="hide" aria-label="Sulge menüü">
+        <svg class="icon icon--close" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M8 8l8 8M16 8l-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+    <ul class="menu__list">
+      <li class="menu__item"><a class="menu__link" href="avaleht.html" aria-current="page">Avaleht<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="leia_trenn.html">Leia trenn<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="hiit.html">HIIT treening<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="broneeri_koht.html">Broneeri koht<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Hinnakiri<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="#">KKK<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+    </ul>
+  </nav>
+
+  <main class="main">
+    <a class="search-link" href="leia_trenn.html">Leia trenn…</a>
+
+    <section class="intro">
+      <p class="intro__text">MOVE on treeningstuudio, kus liikumine pole kohustus, vaid osa päevast.</p>
+      <p class="intro__text">Meie treenerid aitavad sul leida sobiva tempo, olgu eesmärgiks jõu kasvatamine, vormis püsimine või lihtsalt stressist vabanemine.</p>
+    </section>
+
+    <section class="today" aria-labelledby="today-title">
+      <h2 class="today__title" id="today-title">Trennid täna:</h2>
+      <ul class="today__list">
+        <li class="today__item">
+          <span class="today__name">HIIT <time datetime="13:00">13.00</time></span>
+          <a class="today__book" href="broneeri_koht.html" aria-label="Broneeri HIIT kell 13.00">
+            <svg class="icon icon--check" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M7 12.5l3.5 3.5L17 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="today__book-label">Broneeri</span>
+          </a>
+        </li>
+        <li class="today__item">
+          <span class="today__name">Jooga <time datetime="17:00">17.00</time></span>
+          <a class="today__book" href="broneeri_koht.html" aria-label="Broneeri jooga kell 17.00">
+            <svg class="icon icon--check" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M7 12.5l3.5 3.5L17 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="today__book-label">Broneeri</span>
+          </a>
+        </li>
+        <li class="today__item">
+          <span class="today__name">Pilates <time datetime="17:35">17.35</time></span>
+          <a class="today__book" href="broneeri_koht.html" aria-label="Broneeri pilates kell 17.35">
+            <svg class="icon icon--check" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M7 12.5l3.5 3.5L17 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="today__book-label">Broneeri</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <nav class="quick-links" aria-label="Lisainfo">
+      <a class="button button--primary" href="#">Hinnakiri</a>
+      <a class="button button--secondary" href="#">KKK</a>
+    </nav>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">MOVE treeningstuudio — Tallinn</p>
+  </footer>
+</body>
+</html>

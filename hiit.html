@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HIIT – MOVE</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page page--workout">
+  <header class="header">
+    <a class="header__back" href="avaleht.html"><span aria-hidden="true">←</span> Avalehele</a>
+    <button class="header__menu" type="button" aria-label="Ava menüü" popovertarget="menu">
+      <svg class="icon icon--menu" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <rect x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M7 8h10M7 12h10M7 16h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </header>
+
+  <nav class="menu" id="menu" popover aria-label="Peamenüü">
+    <div class="menu__header">
+      <a class="menu__logo" href="avaleht.html">MOVE</a>
+      <button class="menu__close" type="button" popovertarget="menu" popovertargetaction="hide" aria-label="Sulge menüü">
+        <svg class="icon icon--close" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M8 8l8 8M16 8l-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+    <ul class="menu__list">
+      <li class="menu__item"><a class="menu__link" href="avaleht.html">Avaleht<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="leia_trenn.html">Leia trenn<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="hiit.html" aria-current="page">HIIT treening<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="broneeri_koht.html">Broneeri koht<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Hinnakiri<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="#">KKK<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+    </ul>
+  </nav>
+
+  <main class="main">
+    <article class="workout">
+      <header class="workout__header">
+        <h1 class="workout__title">HIIT</h1>
+        <p class="workout__subtitle">Kõrge intensiivsusega intervalltreening</p>
+      </header>
+
+      <img class="workout__image" src="img/hiit-detail.jpg" alt="Treenija tõstab põrandalt sangpommi" width="334" height="174">
+
+      <dl class="details">
+        <div class="details__row">
+          <dt class="details__term">Toimumise aeg:</dt>
+          <dd class="details__value">Täna kell <time datetime="13:00">13.00</time></dd>
+        </div>
+        <div class="details__row">
+          <dt class="details__term">Kestus:</dt>
+          <dd class="details__value">45 minutit</dd>
+        </div>
+        <div class="details__row">
+          <dt class="details__term">Asukoht:</dt>
+          <dd class="details__value">MOVE treeningstuudio</dd>
+        </div>
+        <div class="details__row">
+          <dt class="details__term">Kohti alles:</dt>
+          <dd class="details__value">4/12</dd>
+        </div>
+        <div class="details__row">
+          <dt class="details__term">Hind:</dt>
+          <dd class="details__value">40 €</dd>
+        </div>
+      </dl>
+
+      <section class="workout__description" aria-labelledby="description-title">
+        <h2 class="workout__description-title" id="description-title">Treeningu kirjeldus</h2>
+        <p class="workout__description-text">HIIT on intensiivne treening, kus vahelduvad lühikesed pingutused ja puhkepausid. See aitab parandada vastupidavust ja üldist füüsilist vormi.</p>
+      </section>
+
+      <a class="button button--primary workout__cta" href="broneeri_koht.html">Broneeri koht</a>
+    </article>
+  </main>
+</body>
+</html>

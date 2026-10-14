@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Broneering kinnitatud – MOVE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="page page--confirmation">
+  <header class="header">
+    <a class="header__logo" href="avaleht.html">MOVE</a>
+    <button class="header__menu" type="button" aria-label="Ava menüü" popovertarget="menu">
+      <svg class="icon icon--menu" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <rect x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M7 8h10M7 12h10M7 16h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </header>
+
+  <nav class="menu" id="menu" popover aria-label="Peamenüü">
+    <div class="menu__header">
+      <a class="menu__logo" href="avaleht.html">MOVE</a>
+      <button class="menu__close" type="button" popovertarget="menu" popovertargetaction="hide" aria-label="Sulge menüü">
+        <svg class="icon icon--close" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M8 8l8 8M16 8l-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+    <ul class="menu__list">
+      <li class="menu__item"><a class="menu__link" href="avaleht.html">Avaleht<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="leia_trenn.html">Leia trenn<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="hiit.html">HIIT treening<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="broneeri_koht.html">Broneeri koht<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Hinnakiri<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="#">KKK<span class="menu__arrow" aria-hidden="true">→</span></a></li>
+    </ul>
+  </nav>
+
+  <main class="main">
+    <div class="confirmation">
+      <svg class="icon icon--check confirmation__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M7 12.5l3.5 3.5L17 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h1 class="confirmation__title">Broneering kinnitatud!</h1>
+      <p class="confirmation__thanks">Aitäh, <span data-field="nimi">Nimi</span>!</p>
+    </div>
+
+    <section class="summary-card" aria-labelledby="workout-title">
+      <h2 class="summary-card__title" id="workout-title">HIIT</h2>
+      <dl class="summary-card__list">
+        <div class="summary-card__row">
+          <dt class="summary-card__term">Aeg</dt>
+          <dd class="summary-card__value">Täna kell <time datetime="13:00">13.00</time></dd>
+        </div>
+        <div class="summary-card__row">
+          <dt class="summary-card__term">Kestus</dt>
+          <dd class="summary-card__value">45 minutit</dd>
+        </div>
+        <div class="summary-card__row">
+          <dt class="summary-card__term">Asukoht</dt>
+          <dd class="summary-card__value">MOVE treeningstuudio</dd>
+        </div>
+        <div class="summary-card__row">
+          <dt class="summary-card__term">Kohti alles</dt>
+          <dd class="summary-card__value">4/12</dd>
+        </div>
+        <div class="summary-card__row">
+          <dt class="summary-card__term">Hind</dt>
+          <dd class="summary-card__value">40 €</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="summary-card" aria-labelledby="user-title">
+      <h2 class="summary-card__title" id="user-title">Sinu andmed</h2>
+      <dl class="summary-card__list">
+        <div class="summary-card__row">
+          <dt class="summary-card__term">Nimi</dt>
+          <dd class="summary-card__value" data-field="nimi">Nimi</dd>
+        </div>
+        <div class="summary-card__row">
+          <dt class="summary-card__term">E-post</dt>
+          <dd class="summary-card__value" data-field="email">näidis@gmail.com</dd>
+        </div>
+        <div class="summary-card__row">
+          <dt class="summary-card__term">Telefon</dt>
+          <dd class="summary-card__value" data-field="telefon">+372 5123 456</dd>
+        </div>
+      </dl>
+    </section>
+
+    <p class="confirmation__note">Saatsime kinnituse sinu e-posti aadressile. Palun tule kohale 10 minutit enne trenni algust.</p>
+  </main>
+</body>
+</html>
